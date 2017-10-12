@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box ul li{
+            list-style: none;
+            float: left;
+            margin: 10px 10px ;
+        }
+        .box ul li a{
+            color: #000;
+            font-weight: 600;
+            font-size: 13px;
+        }
+        .box ul li:nth-of-type(n+7) a{
+            font-weight: 100;
+        }
+        .box span{
+            float: left;
+            background-color: #3387FE;
+            margin-top: 13px;
+            width: 70px;
+            text-align: center;
+            color: #ffffff;
+            font-size: 15px;
+            height: 20px;
+            padding-top: 1px;
+        }
+        .box{
+            float: right;
+        }
+        .box{
+            width: 530px;
+        }
+        section {
+            text-align: center;
+        }
+        .clear{
+            clear: both;
+        }
+        img{
+            width: 295px;
+            height: 166px;
+        }
+        input{
+            width: 500px;
+            margin-top: 10px;
+            height: 30px;
+        }
+        button{
+              width: 105px;
+              height:34px;
+              background-color:#3387FE;
+            border: none;
+            color: #ffffff;
+        }
+        footer{
+            width: 100%;
+            text-align: center;
+            margin-top: 200px;
+        }
+        footer img{
+            width: 70px;
+            height: 90px;
+        }
+        .footer1 li{
+            float: left;
+            list-style: none;
+            margin: 10px 20px;
+        }
+        .footer1 li a{
+            color: #999999;
+            font-size: 13px;
+        }
+        .footer1{
+            width: 450px;
+            height: 30px;
+            margin: 0 auto;
+        }
+        .footer2{
+            width: 580px;
+            margin: 0 auto;
+        }
+        .footer2 li{
+            list-style: none;
+            float: left;
+            margin-left: 15px;
+            font-size: 13px;
+            color: #999999;
+        }
+        .shuju span{
+            color: #111111;
+        }
+        .shuju p{
+            color: red;
+
+        }
+        .shuju{
+            width: 300px;
+            text-align: left;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+<header>
+<div class="box">
+    <ul>
+        <li><a href="">新闻</a></li>
+        <li><a href="">hao123</a></li>
+        <li><a href="">地图</a></li>
+        <li><a href="">视频</a></li>
+        <li><a href="">贴吧</a></li>
+        <li><a href="">学术</a></li>
+        <li><a href="">登录</a></li>
+        <li><a href="">设置</a></li>
+    </ul>
+    <span>更多信息</span>
+</div>
+    <div class="clear"></div>
+</header>
+<section>
+    <img src="bd_logo1.png" alt=""/>
+    <div class="input">
+        <input type="text" autofocus/><button>查询</button>
+        <div class="shuju">
+
+
+56456454646
+
+        </div>
+    </div>
+
+</section>
+<footer>
+    <img src="www.png" alt=""/>
+    <div class="footer1">
+        <ul>
+            <li><a href="">把百度设为主页</a></li>
+            <li><a href="">关于百度</a></li>
+            <li><a href="">About  Baidu</a></li>
+            <li><a href="">百度推广</a></li>
+        </ul>
+    </div>
+    <div class="footer2">
+        <ul>
+            <li>©2017 Baidu 使用百度前必读 意见反馈 京ICP证030173号</li>
+            <li>京公网安备11000002000001号</li>
+        </ul>
+    </div>
+    <!--<span> <span> </span></span>-->
+
+</footer>
+</body>
+<script>
+    //学校里所有人上学期间考试成绩
+    //分数 姓名 科目 考试时间 考号 场所
+    window.onload=function(){
+               //先组建学校中每个人的考试信息
+        var data=[{
+            name:'丁桂伟',
+            kaoshixinxi:[{
+                kaohao:'001',
+                kaochang:'清华大学',
+                time:'2017年十月一号',
+                kemu:{
+                    yuwen:'99',
+                    shuxue:'99',
+                    yingyu:'99'
+                }
+            },{
+                kaohao:'002',
+                kaochang:'获嘉小学',
+                time:'2000年十月一号',
+                kemu:{
+                    yuwen:'99',
+                    shuxue:'99',
+                    yingyu:'99'
+                }
+            },{
+                kaohao:'003',
+                kaochang:'获嘉大洛纣幼儿园',
+                time:'1995年十月一号',
+                kemu:{
+                    yuwen:'99',
+                    shuxue:'99',
+                    yingyu:'99'
+                }
+            }]
+        },
+            {
+                name:'丁桂超',
+                kaoshixinxi:[{
+                    kaohao:'004',
+                    kaochang:'北京大学',
+                    time:'2017年十月一号',
+                    kemu:{
+                        yuwen:'99',
+                        shuxue:'99',
+                        yingyu:'99'
+                    }
+                },{
+                    kaohao:'005',
+                    kaochang:'获嘉小学',
+                    time:'2000年十月一号',
+                    kemu:{
+                        yuwen:'99',
+                        shuxue:'99',
+                        yingyu:'99'
+                    }
+                },{
+                    kaohao:'006',
+                    kaochang:'获嘉大洛纣幼儿园',
+                    time:'1995年十月一号',
+                    kemu:{
+                        yuwen:'99',
+                        shuxue:'99',
+                        yingyu:'99'
+                    }
+                  }]
+                },{
+                name:'冯杰',
+                kaoshixinxi:[{
+                    kaohao:'007',
+                    kaochang:'加里敦大学',
+                    time:'2017年十月一号',
+                    kemu:{
+                        yuwen:'88',
+                        shuxue:'88',
+                        yingyu:'77'
+                    }
+                },{
+                    kaohao:'008',
+                    kaochang:'获嘉小学',
+                    time:'2000年十月一号',
+                    kemu:{
+                        yuwen:'88',
+                        shuxue:'77',
+                        yingyu:'98'
+                    }
+                },{
+                    kaohao:'009',
+                    kaochang:'获嘉大洛纣幼儿园',
+                    time:'1995年十月一号',
+                    kemu:{
+                        yuwen:'97',
+                        shuxue:'1',
+                        yingyu:'46'
+                    }
+                }]
+            }
+
+        ];
+
+
+
+
+        var but=document.querySelector('button');
+        var shuju=document.querySelector('.shuju');
+        var inp=document.querySelector('input');
+        console.log(shuju);
+        var str='';
+
+        shuju.innerHTML=str;
+
+        but.addEventListener('click',function(){
+            str='';           //这个是把上面重复的代码给清空
+            var text=inp.value;
+            for(var i=0;i<data.length;i++){
+
+                if(data[i].name===text){
+                    str+='<h2><span>名字:</span>'+data[i].name+'</h2>';
+                    for(var j=0;j<data[i].kaoshixinxi.length;j++){
+
+                        str+='<h3><span>时间:</span>'+data[i].kaoshixinxi[j].time+'</h3>';
+                        str+='<p><span>考场</span>:'+data[i].kaoshixinxi[j].kaochang+'</p>';
+                        str+='<p><span>考号:</span>'+data[i].kaoshixinxi[j].kaohao+'</p>';
+                        str+='<p><span>语文:</span>'+data[i].kaoshixinxi[j].kemu.yuwen+'分</p>';
+                        str+='<p><span>数学:</span>'+data[i].kaoshixinxi[j].kemu.shuxue+'分</p>';
+                        str+='<p><span>英语:</span>'+data[i].kaoshixinxi[j].kemu.yingyu+'分</p>';
+                    }
+                }
+            }
+            shuju.innerHTML=str; //注意还得添加一下动态元素因为这行事件都是在点击事件里执行的
+        });
+        console.log(str);  //如果这个输出str放到for循环中也跟着循环
+    }
+</script>
+</html>
